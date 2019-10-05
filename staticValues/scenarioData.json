@@ -1,0 +1,15 @@
+{
+  "backend": {
+    "login": {
+      "success": {
+        "httpStatusCode": 200
+      },
+      "loginCreds": {
+        "email": "automationpractice13@gmail.com",
+        "password": "Sveikas123",
+        "back": "my-account",
+        "SubmitLogin": ""
+      }
+    }
+  }
+}
