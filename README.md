@@ -10,5 +10,4 @@ In order to run the tests you have to:
 P.S: I've done it on mac. Not sure how it would work on win machine.
 
 Task:
-1. Register flow with validation check (using external file for test data)
-2. Dresses -> Summer dress table content check and filter tests
+Dresses -> Summer dress table content check and filter tests

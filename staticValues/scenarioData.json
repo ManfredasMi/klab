@@ -11,5 +11,22 @@
         "SubmitLogin": ""
       }
     }
+  },
+  "frontend": {
+    "registrationData": {
+      "success": {
+        "email": "anyEmail@smurfs.com",
+        "lastName": "Nicelastname",
+        "password": "verynicepassword",
+        "address": "beautiful1",
+        "city": "miestelis",
+        "postalCode": 40000,
+        "mobileNr": "112"
+      },
+      "fail": {
+        "email": "anyEmail@smurfs.com",
+        "firstName": "name"
+      }
+    }
   }
 }

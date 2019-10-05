@@ -61,5 +61,29 @@ module.exports = {
     browser
       .executeScript("arguments[0].scrollIntoView(true)", pageElement)
       .catch(() => {});
+  },
+
+  randomizeEmail(email, isInboxNeeded = false) {
+    let plus = "";
+    if (isInboxNeeded) {
+      plus = "+";
+    }
+    return email.replace("@", `${plus}${Date.now().toString()}@`);
+  },
+
+  selectDropdownByOptionNum(pageElement, optionNum) {
+    const opt = pageElement.get(optionNum);
+    if (opt.then) {
+      opt.then(
+        o => {
+          o.click();
+        },
+        err => {
+          throw `Cannot select option ${optionNum} as error occured: ${err}`;
+        }
+      );
+    } else {
+      opt.click();
+    }
   }
 };

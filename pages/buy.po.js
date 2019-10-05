@@ -1,4 +1,5 @@
 const frontendHelper = require("../helpers/frontendHelper");
+const timeouts = require("../staticValues/constants.json");
 
 const buy = {
   buttonDresses: element.all(by.css("[title='Dresses']")),
@@ -27,6 +28,10 @@ const buy = {
     frontendHelper.clickElement(this.allPrintedDresses.get(0));
     this.clickAddToCart();
     frontendHelper.focusElement(this.buttonContinueShopping);
+    frontendHelper.waitUntilElementAppears(
+      this.buttonContinueShopping,
+      timeouts.shortTimeout
+    );
     this.clickContinueShopping();
     frontendHelper.clickElement(this.buttonDresses.get(1));
     frontendHelper.clickElement(this.allPrintedDresses.get(1));
