@@ -34,17 +34,25 @@ const buy = {
     );
     this.clickContinueShopping();
     frontendHelper.clickElement(this.buttonDresses.get(1));
-    frontendHelper.clickElement(this.allPrintedDresses.get(1));
+    frontendHelper.clickElement(this.allPrintedDresses.get(2));
     this.clickAddToCart();
     frontendHelper.focusElement(this.buttonContinueShopping);
+    frontendHelper.waitUntilElementAppears(
+      this.buttonContinueShopping,
+      timeouts.shortTimeout
+    );
     this.clickContinueShopping();
     frontendHelper.clickElement(this.buttonDresses.get(1));
-    frontendHelper.clickElement(this.allSummerDresses.get(0));
+    frontendHelper.clickElement(this.allPrintedDresses.get(3));
     this.clickAddToCart();
   },
 
   verifyOrderCompletion() {
     frontendHelper.focusElement(this.buttonProceedCheckout.get(0));
+    frontendHelper.waitUntilElementAppears(
+      this.buttonProceedCheckout,
+      timeouts.shortTimeout
+    );
     frontendHelper.clickElement(this.buttonProceedCheckout.get(0));
     frontendHelper.focusElement(this.buttonProceedCheckout.get(1));
     frontendHelper.clickElement(this.buttonProceedCheckout.get(1));

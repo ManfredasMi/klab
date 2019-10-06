@@ -8,9 +8,9 @@ exports.config = {
   directConnect: false,
 
   suites: {
-    // loginPage: "./test/login.spec.js",
-    // buyPage: "./test/buy.spec.js",
-    // registrationPage: "./test/registration.spec.js",
+    loginPage: "./test/login.spec.js",
+    buyPage: "./test/buy.spec.js",
+    registrationPage: "./test/registration.spec.js",
     dressesPage: "./test/dresses.spec.js"
   },
 

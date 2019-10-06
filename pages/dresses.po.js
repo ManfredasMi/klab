@@ -21,7 +21,9 @@ const dresses = {
 
   verifyPolyesterFilteredChanges() {
     frontendHelper.clickElement(this.checkPolyesterCheckbox);
-    console.log("After previous test filters are broken");
+    console.log(
+      "After making the previous step test filters are broken and dies"
+    );
   },
 
   verifyFirstDressPrice() {
