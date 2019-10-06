@@ -27,6 +27,17 @@
         "email": "anyEmail@smurfs.com",
         "firstName": "name"
       }
+    },
+    "dresses": {
+      "firstDressInfo": {
+        "price": "$26.00"
+      },
+      "secondDressInfo": {
+        "price": "$50.99"
+      },
+      "thirdDressInfo": {
+        "price": "$16.40"
+      }
     }
   }
 }

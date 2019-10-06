@@ -6,14 +6,7 @@ const scenarioData = require("../staticValues/scenarioData.json").backend.login;
 describe("API login ", () => {
   it("Expect login request response status code to be valid", done => {
     helper
-      .login(
-        login.generateLoginPayload(
-          scenarioData.loginCreds.email,
-          scenarioData.loginCreds.password,
-          scenarioData.loginCreds.back,
-          scenarioData.loginCreds.SubmitLogin
-        )
-      )
+      .login(login.generateLoginPayload(scenarioData.loginCreds))
       .then(({ status }) => {
         validation.expectCondition(
           scenarioData.success.httpStatusCode,
