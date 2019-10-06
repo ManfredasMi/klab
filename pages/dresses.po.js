@@ -13,9 +13,15 @@ const dresses = {
       "[class='product_list grid row'] div .right-block [itemprop='offers'] [itemprop='price']"
     )
   ),
+  checkPolyesterCheckbox: element(by.id("uniform-layered_id_feature_1")),
 
   clickOnSummerDresses() {
     frontendHelper.clickElement(this.allDressesOptions.get(2));
+  },
+
+  verifyPolyesterFilteredChanges() {
+    frontendHelper.clickElement(this.checkPolyesterCheckbox);
+    console.log("After previous test filters are broken");
   },
 
   verifyFirstDressPrice() {
@@ -46,7 +52,7 @@ const dresses = {
 
   verifyThirdDressPrice() {
     this.allSummerDressPrices
-      .get(1)
+      .get(2)
       .getText()
       .then(price => {
         validation.expectCondition(

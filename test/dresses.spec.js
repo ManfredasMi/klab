@@ -23,15 +23,19 @@ describe("Dresses page ", () => {
     dresses.verifyDressesPage();
   });
 
-  it("Expect summer dress table content text to be printed in the console", () => {
+  it("Expect first summer dress table price to be as per scenarioData", () => {
     dresses.verifyFirstDressPrice();
   });
 
-  it("Expect summer dress table content text to be printed in the console", () => {
+  it("Expect second summer dress table price to be as per scenarioData", () => {
     dresses.vertifySecondDressPrice();
   });
 
-  it("Expect summer dress table content text to be printed in the console", () => {
+  it("Expect third summer dress table price to be as per scenarioData", () => {
     dresses.verifyThirdDressPrice();
+  });
+
+  xit("Expect polyester filter option works good", () => {
+    dresses.verifyPolyesterFilteredChanges();
   });
 });

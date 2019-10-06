@@ -9,3 +9,4 @@ In order to run the tests you have to:
 
 P.S: I've done it on mac. Not sure how it would work on win machine.
 P.P.S.: As specialiai palikau viena is summer dress(scenarioData) kainu neteisinga, jog parodyti kaip atrodo neteisingas variantas(failines) testuose.
+P.P.P.S.: Filtru funkcionalumas yra sugriuves website, tai situ testu ir nepadariau.
